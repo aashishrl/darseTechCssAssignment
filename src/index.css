@@ -1,0 +1,84 @@
+body{
+  height: 100vh;
+}
+.boxes-container {
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+position: relative;
+padding: 20px;
+background: #e8eaeb;
+}
+
+.box {
+background-color: white;
+padding: 20px;
+text-align: center;
+border-radius: 8px;
+flex: 1 1 calc(33.33% - 20px);
+box-sizing: border-box;
+}
+.samecss {
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+}
+.box1 {
+height: 150px;
+}
+
+.box2 {
+height: 250px;
+}
+
+.box3 {
+height: 200px;
+}
+
+.box4 {
+bottom: 100px;
+height: 250px;
+}
+
+.box5 {
+height: 100px;
+}
+
+.box6 {
+bottom: 50px;
+height: 200px;
+}
+
+.box3,
+.box6 {
+background: #e7aa6c;
+}
+
+@media (max-width: 1000px) {
+.box {
+  flex: 1 1 calc(50% - 20px);
+}
+
+.box1 {
+  order: 1;
+}
+.box2 {
+  order: 2;
+}
+.box4 {
+  order: 3;
+  bottom: 100px;
+}
+.box5 {
+  order: 4;
+}
+.box3 {
+  order: 5;
+  bottom: 100px;
+}
+.box6 {
+  order: 6;
+  bottom: 150px;
+}
+}
